@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action="@{findbyid}" th:object="${msg}" method="GET">
+		<h1>Get Book by Id</h1>
+
+		<table >
+
+			<tr>
+				 
+				<td><input type="text" th:field="*{bId}" placeholder="Enter Id" /></td>
+
+			 
+				 
+				<td><input type="submit" value="Submit" /></td>
+			</tr>
+
+		</table>
+		 
+
+	</form>
+</body>
+</html>

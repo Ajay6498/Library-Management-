@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action="@{update}" th:object="${msg}" method="POST">
+		<h1>Update Book</h1>
+
+		<table border="1">
+
+			<tr>
+				<td>Id :</td>
+				<td><input type="text" th:field="*{bId}" placeholder="Enter Id" /></td>
+
+			</tr>
+			<tr>
+				<td>Name :</td>
+				<td><input type="text" th:field="*{bName}"
+					placeholder="Enter Name" /></td>
+
+
+			</tr>
+			<tr>
+				<td>Author :</td>
+				<td><input type="text" th:field="*{bAuthor}"
+					placeholder="Enter Author" /></td>
+
+			</tr>
+			<tr>
+				<td>Price :</td>
+				<td><input type="text" th:field="*{bPrice}"
+					placeholder="Enter Price" /></td>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit" /></td>
+			</tr>
+
+		</table>
+		<div>
+		</div>
+		<div>
+			View All <a href="/getll">Click here</a>
+		</div>
+
+	</form>
+</body>
+</html>

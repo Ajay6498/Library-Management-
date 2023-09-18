@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+<h1>Books</h1>
+<p th:text=${msg}/> 
+	<!-- <table border="1" style="width: 300px">
+
+		<tr>
+			<td>Id</td>
+			<td>Name</td>
+			<td>Email</td>
+			<td>Stream</td>
+			 
+
+
+		</tr>
+		<tr th:each="book : ${ms}">
+
+			<td th:text="${book.bId}"></td>
+			<td th:text="${book.bName}"></td>
+			<td th:text="${book.bAuthor}"></td>
+			<td th:text="${book.bPrice}"></td>
+			 
+
+		</tr>
+
+	</table> -->
+	<div>
+		Return to Add page <a href="add">Click here</a>
+	</div>
+	<div>
+		Return to welcome page <a href="/library">Click here</a>
+	</div>
+
+</form>
+</body>
+</html>
